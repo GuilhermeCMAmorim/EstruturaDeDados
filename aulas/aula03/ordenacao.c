@@ -31,24 +31,3 @@ void imprimir_vetor(int v[], int n)
     }
     printf("%i]\n", v[n-1]);
 }
-
-int particionar_vetor(int v[], int inicio, int fim) {
-    int pivo = v[fim];
-    int i = inicio - 1;
-    for(int j = inicio; j < fim; j++) {
-        if(v[j] <= pivo) {
-            i++;
-            troca(&v[i], &v[j]);
-        }
-    }
-    troca(&v[i + 1], &v[fim]);
-    return i + 1;
-}
-
-void quick_sort(int v[], int inicio, int fim) {
-    if(inicio < fim) {
-        int p = particionar_vetor(v, inicio, fim);
-        quick_sort(v, inicio, p - 1);
-        quick_sort(v, p + 1, fim);
-    }
-}
