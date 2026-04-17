@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+
 float media_result(int n, float soma)
 {
     return soma / n;

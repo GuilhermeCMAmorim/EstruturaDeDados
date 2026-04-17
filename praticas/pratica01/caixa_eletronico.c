@@ -5,7 +5,7 @@ float saque(float valor) {
         printf("Erro: Valor de saque excedido!");
         return -1;
     }
-    int resto = valor; // Caso valor = impar
+    int resto = valor; // Caso valor impar
 
     int n200 = resto / 200;
     resto %= 200;

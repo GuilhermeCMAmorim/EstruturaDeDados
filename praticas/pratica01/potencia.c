@@ -9,7 +9,6 @@ int main() {
         resultado *= num;
     }
 
-    // Arquivo texto para salvar o resultado
     printf("O resultado da potência é: %.2f\n", resultado);
     
     return 0;
